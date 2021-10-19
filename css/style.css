@@ -1,0 +1,149 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+
+.content {
+    position: relative;
+    background-color: hsl(244, 38%, 16%);
+    width: 1080px;
+    height: 446px;
+    left: 50%;
+    margin-left: -540px;
+    margin-top: 25vh;
+    display: flex;
+    border-radius: 0.5rem 0.5rem;
+}
+
+.text-section {
+    margin: 4rem;
+    margin-right: 3rem;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover {
+    font-size: .95rem;
+    font-weight:lighter;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 3rem;
+    line-height: 1.55;
+    margin-top: 0;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.95rem;
+    font-weight: 700;
+}
+
+.text-section h1 span {
+    color: hsl(277, 64%, 61%);
+
+}
+
+.extra-info {
+    padding: 0;
+    padding-right: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.comp {
+    justify-content: left;
+    align-content: center;
+    text-transform: lowercase;
+}
+
+.temp {
+    justify-content: center;
+}
+
+.quer {
+    justify-content: right;
+}
+
+.spec {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.75rem;
+    /* font-weight: 100; */
+    letter-spacing: .1rem;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+}
+
+/*************** Image Section ****************/
+.tinted-image {
+    position: absolute;
+    display: hidden;
+    width: 50%;
+    height:100%;
+    background-color:hsl(277, 81%, 33%);
+    z-index: 1;
+    border-radius: 0 0.5rem 0.5rem 0;
+    opacity: .52;
+}
+
+.content-image {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/****************** RESPONSIVENESS *******************/
+
+@media only screen and (max-width: 425px) {
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        margin-bottom: 1.1rem;
+        font-size: 1.8rem;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+        left: 5%;
+        border-radius: 0 0 0.5rem 0.5rem;
+        margin-top: 10vh;
+    }
+
+    .tinted-image, .content-image {
+        width: 100%;
+        height: 240px;
+        border-radius: 0.5rem 0.5rem 0 0;
+
+    }
+
+    .extra-info {
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .text-section {
+        margin: .4vh;
+    }
+
+    .text-region {
+        margin: 0 1.65vh;
+    }
+
+    .discover {
+        margin: 0 1.2rem 2.5rem;
+    }
+
+    .comp, .temp, .quer {
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
